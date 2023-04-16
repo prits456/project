@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.theagoraexchange.utility.Listerners"/>
+  </listeners>
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.theagoraexchange.test.Test">
+        <methods>
+          <include name="open_Browser"/>
+          <include name="enter_ApplicationUrl"/>
+          <include name="addToCart"/>
+          <include name="verify_WithValidCredentials"/>
+          <include name="produtselectionandincreament"/>
+          <include name="verify_AlertMeassageWithInvalidCredentials"/>
+          <include name="verify_Dashboard"/>
+          <include name="verify_LandingPage"/>
+          <include name="SearchandVerifyproduct"/>
+        </methods>
+      </class> <!-- com.theagoraexchange.test.Test -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" name="EdgeTest(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="com.theagoraexchange.test.Test">
+        <methods>
+          <include name="open_Browser"/>
+          <include name="enter_ApplicationUrl"/>
+          <include name="addToCart"/>
+          <include name="verify_WithValidCredentials"/>
+          <include name="produtselectionandincreament"/>
+          <include name="verify_AlertMeassageWithInvalidCredentials"/>
+          <include name="verify_Dashboard"/>
+          <include name="verify_LandingPage"/>
+          <include name="SearchandVerifyproduct"/>
+        </methods>
+      </class> <!-- com.theagoraexchange.test.Test -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
